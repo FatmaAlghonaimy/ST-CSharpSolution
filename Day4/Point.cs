@@ -15,11 +15,11 @@ namespace Day4
 
 
         ///constructor overloading
-        public Point() //default //non-parameterized constructor
-        {
-            x = default;
-            y = default;
-        }
+        //public Point() //default //non-parameterized constructor
+        //{
+        //    x = default;
+        //    y = default;
+        //}
         //this refers to caller
         public Point(int _x, int _y) //parameterized constructor
         {

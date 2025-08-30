@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace Common
 {
-    //by default internal
-    public  struct TypeA
+    /// <summary>
+    /// 1- no inheritance 
+    /// inside project , outside project
+    /// 2- inheritance
+    /// inside inherited class , inside project , outside project
+    /// </summary>
+  
+    public class TypeA
     {
-        public int x;
+        private int x; 
         internal int y;
-        private int z;
+        public int z;
 
-        public void MyMethod()
+        private protected int a;
+        protected int b;
+        internal protected int c;
+        public TypeA()
         {
-            x = 10;
-            y = 10;
-            z = 10;
+            x = 1; // X is private [ assessable within its Scope ]
+            y = 2; // Y is Internal [ assessable within the project ] 
+            z = 3; // Z is Public [ assessable anywhere ]
         }
     }
 }

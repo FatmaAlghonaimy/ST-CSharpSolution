@@ -23,11 +23,12 @@ namespace Day4
             #region Struct 
             #region Example 01
             //Point p1; //not reference 
-            // Declare variable | Object From Type 'Point' 
-            // CLR Will Allocate 8 Unitintialized Bytes At Stack 
+            //// Declare variable | Object From Type 'Point' 
+            //// CLR Will Allocate 8 Unitintialized Bytes At Stack 
 
 
             //p1 = new Point();
+            //Console.WriteLine(p1);
             //// New Is Just For Constructor Selection That Will Used To Initialize P1 Attribute 
 
             //p1 = new(5, 6); //default constructor //syntax suger
